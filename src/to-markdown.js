@@ -170,7 +170,7 @@ var toMarkdown = function(string) {
   }
   
   function cleanUp(string) {
-    string = string.replace(/^[\t\r\n]+|[\t\r\n]+$/g, ''); // trim leading/trailing whitespace
+    string = string.replace(/^[\s\t\r\n]+|[\s\t\r\n]+$/g, ''); // trim leading/trailing whitespace
     string = string.replace(/\n\s+\n/g, '\n\n');
     string = string.replace(/\n{3,}/g, '\n\n'); // limit consecutive linebreaks to 2
     return string;
